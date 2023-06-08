@@ -1,0 +1,16 @@
+canvas {
+  border: 1px solid #ffffff;
+  margin: 20px;
+  ba
+}
+
+body{
+  margin-top: 10%;
+  font-family: roboto;
+  background-color: #17223b;
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
