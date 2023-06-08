@@ -11,9 +11,9 @@ dateInput.addEventListener("change", function() {
   if (selectedDate && !isNaN(selectedDate)) {
     // Establecer la fecha seleccionada como countDownDate
     countDownDate = selectedDate.getTime();
-    title.innerHTML = "Esto Falta para tu evento";
+    title.innerHTML = "Esto falta para tu evento";
   } else {
-    title.innerHTML = "Esto Falta para el Año Nuevo";
+    title.innerHTML = "El próximo Año comienza en…";
   }
 });
 
