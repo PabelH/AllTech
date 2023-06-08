@@ -1,0 +1,48 @@
+body {
+  font-family: roboto;
+  background-color: #17223b;
+  color: aliceblue;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 700px;
+  height: 200px;
+  padding: 18px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.box.a {
+  background-color: #43418a;
+}
+.box.b {
+  background-color: #43418a;
+}
+.box.c {
+  background-color: #43418a;
+}
+
+.spinner {
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  animation: spin 1.0s linear infinite;
+  border-bottom-color: #614ad3;
+}
+
+@keyframes spin {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+.box.d {
+  background-color: #43418a;
+}
