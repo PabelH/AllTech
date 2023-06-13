@@ -1,16 +1,21 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import requests
+from bs4 import BeautifulSoup
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def get_img_link(url):
+    answer = requests.get(url)
+    if answer.status_code == 200:
+        soup = BeautifulSoup(answer.content, 'html.parser')
+        etiquetas_img = soup.find_all('img')
+        enlaces_img = [img['src'] for img in etiquetas_img if 'src' in img.attrs]
+        return enlaces_img
+    else:
+        print('Error al obtener el contenido de la página:', answer.status_code)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+page_url = input("Introduce la URL de la página: ")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+image_link = get_img_link(page_url)
+
+for enlace in image_link:
+    print(enlace)
