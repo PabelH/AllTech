@@ -1,0 +1,43 @@
+#canvas {
+  border: 1px solid aliceblue;
+  cursor: crosshair;
+  margin: 15px;
+}
+body {
+  margin-top: 2% !important;
+  font-family: roboto !important;
+  background-color: #17223b !important;
+  color: aliceblue !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button{
+  border-radius: 30px !important; 
+}
+
+#saveBtn{
+  display: block;
+  margin: auto;
+}
+
+#restoreBtn{
+  margin: 5px;
+}
+
+.toolbar{
+  margin-left: 0;
+  align-items:flex-start;
+}
+
+#footer1 {
+  margin-top: 5% !important;
+}
+
+#colorTools,
+#brushSizeTools,
+#imageTools,
+#backgroundColorTools {
+  margin-bottom: 10px;
+}
