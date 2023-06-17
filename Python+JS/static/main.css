@@ -50,3 +50,6 @@ button{
   padding: 10px;
 }
 
+#imagePicker, #imagePickerT {
+  margin: auto !important;
+}
